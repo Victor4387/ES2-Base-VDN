@@ -7,67 +7,89 @@
             "actions": [
                 {
                     "name": "ForwardBackward",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "20990b61-c2cd-4402-abd7-226f4d7080a3",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "UpDown",
-                    "type": "Button",
-                    "id": "c6b0589a-8eec-423a-83de-ae8205386643",
-                    "expectedControlType": "Button",
+                    "type": "Value",
+                    "id": "cf0dea31-f3ed-462b-9809-26d7258e3467",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "9066d98e-fd90-4b2d-b958-ca6937aec043",
+                    "name": "2D Vector",
+                    "id": "48d90660-bb28-445d-a70c-ed4c1b16cd1f",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ForwardBackward",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "feb6c99b-deb1-4beb-a001-21cf914aa4f6",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "ForwardBackward",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "a7f97840-917b-4037-984e-fd9f3377d888",
+                    "name": "down",
+                    "id": "212da592-6a94-49e8-999c-f79d6534216f",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "ForwardBackward",
                     "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "18102a52-05e3-4783-a8b2-8fe065396d9c",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UpDown",
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "bd9653d6-96d1-4ccd-9b77-379a6dfd70c6",
-                    "path": "<Keyboard>/e",
+                    "name": "up",
+                    "id": "1b1d4324-307b-4432-a4e6-7d55daf09266",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "UpDown",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "b643de76-2efe-48bb-bc78-13c3cc6f63c2",
-                    "path": "<Keyboard>/q",
+                    "name": "down",
+                    "id": "76eb97ae-4d3d-44b4-bf42-44129583a4bb",
+                    "path": "<Keyboard>/ctrl",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "UpDown",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 }
             ]
         }
