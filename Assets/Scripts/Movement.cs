@@ -38,8 +38,9 @@ public class Movement : MonoBehaviour
         _rb.AddForce(mouvement, ForceMode.VelocityChange);
 
         // calculer un modifiant pour la vitesse d'animation
-        Vector3 vitesseSurPlane = new Vector3(_rb.velocity.x, _rb.velocity.y, 0f);
-        _animator.SetFloat("Vitesse", vitesseSurPlane.magnitude * _modifierAnimTranslation);
-        //_animator.SetFloat("Deplacement", vitesseSurPlane.magnitude);
+        Vector3 vitesseFrontBack = new Vector3(_rb.velocity.x, 0f, 0f);
+        Vector3 vitesseUpDown = new Vector3(0f, _rb.velocity.y, 0f);
+        _animator.SetFloat("Vitesse", vitesseFrontBack.magnitude);
+        _animator.SetFloat("Deplacement", vitesseUpDown.magnitude);
     }
 }
